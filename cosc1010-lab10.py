@@ -50,7 +50,7 @@ def crack_password():
         with open("hash", "r") as hash_file:
             target_hash = hash_file.read().strip() 
     except FileNotFoundError:
-        print("Error: 'hash' file not found.")
+        print("Error: 'hash' no file found.")
         return
     except Exception as e:
         print(f"Error reading 'hash' file: {e}")
@@ -60,13 +60,13 @@ def crack_password():
         with open("rockyou.txt", "r", encoding="utf-8") as password_file:
             passwords = password_file.readlines()
     except FileNotFoundError:
-        print("Error: 'rockyou.txt' file not found.")
+        print("Error: 'rockyou.txt' no file found.")
         return
     except Exception as e:
         print(f"Error reading 'rockyou.txt': {e}")
         return
     else:
-        print("Successfully loaded passwords. Starting to crack the hash...")
+        print("Loading")
 
 
 
