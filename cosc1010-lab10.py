@@ -1,12 +1,11 @@
 # Ethan Hankel
 # UWYO COSC 1010
-# Submission Date
-# Lab XX
-# Lab Section: 
+# Submission Date: 11/19/24
+# Lab 10
+# Lab Section: 07
 # Sources, people worked with, help given to: 
-# your
-# comments
-# here
+# I used the recent powerpoints
+# Chat GPT
 
 #import modules you will need 
 
@@ -45,9 +44,6 @@ def get_hash(to_hash):
 # - End your loop.
 
 
-def get_hash(to_hash):
-    """Generate SHA-256 hash for a given string."""
-    return sha256(to_hash.encode('utf-8')).hexdigest().upper()
 
 def crack_password():
     try:
